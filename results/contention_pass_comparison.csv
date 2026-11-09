@@ -1,0 +1,5 @@
+quant,load,p50_lowest_ms,p50_highest_ms,p50_ratio,p99_lowest_ms,p99_highest_ms,p99_ratio,passes_disagree
+q8_0,idle,997.966,1001.65,1.004,1017.168,1134.28,1.115,False
+q8_0,medium,1094.346,1098.985,1.004,1134.756,1542.401,1.359,True
+q4_k_m,idle,817.852,821.752,1.005,831.638,860.27,1.034,False
+q4_k_m,medium,1069.062,1070.302,1.001,1128.205,1321.442,1.171,False

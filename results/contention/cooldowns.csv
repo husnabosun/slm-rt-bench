@@ -1,0 +1,5 @@
+run_id,repeat,order_pos,config,cooldown_s,cooldown_start_temp_c,config_start_temp_c,target_reached
+contention,0,0,q8_0_medium,0.0,96.85,96.85,False
+contention,0,1,q4_k_m_idle,300.1,73.85,96.85,False
+contention,0,2,q8_0_idle,300.1,75.85,83.85,False
+contention,0,3,q4_k_m_medium,300.1,68.85,75.85,False

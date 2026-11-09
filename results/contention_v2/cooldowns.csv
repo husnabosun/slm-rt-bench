@@ -1,0 +1,11 @@
+run_id,repeat,order_pos,config,cooldown_s,cooldown_start_temp_c,config_start_temp_c,target_reached
+contention_v2,0,0,q8_0_medium,0.0,44.85,44.85,True
+contention_v2,0,1,q4_k_m_idle,60.0,73.85,48.85,True
+contention_v2,0,2,q8_0_idle,60.0,71.85,44.85,True
+contention_v2,0,3,q4_k_m_medium,60.0,72.85,53.85,True
+contention_v2,1,4,q8_0_idle,60.0,75.85,51.85,True
+contention_v2,1,5,q8_0_medium,60.0,74.85,49.85,True
+contention_v2,1,6,q4_k_m_idle,60.0,72.85,47.85,True
+contention_v2,1,7,q4_k_m_medium,60.0,71.85,43.85,True
+contention_heavy,0,0,q8_0_heavy,0.0,59.85,59.85,True
+contention_heavy,0,1,q4_k_m_heavy,60.0,73.85,49.85,True

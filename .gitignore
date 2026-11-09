@@ -1,0 +1,5 @@
+bin/
+models/
+__pycache__/
+*.pyc
+results/**/server_*.log

@@ -1,0 +1,57 @@
+{
+  "run_id": "bestperf_run1",
+  "started": "2026-11-08T22:49:23",
+  "cpu": "AMD Ryzen 7 7730U with Radeon Graphics",
+  "cores_physical": 8,
+  "cores_logical": 16,
+  "ram_gb": 15.3,
+  "os": "Windows-10-10.0.26200-SP0",
+  "power_plan": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Dengeli)",
+  "power_mode_overlay": {
+    "guid": "ded574b5-45a0-4f42-8737-46345c09c238",
+    "name": "Best performance"
+  },
+  "on_ac_power": true,
+  "python": "3.11.5",
+  "llama_cpp_pinned": "b12177",
+  "llama_server_version_output": "version: 0.9.0-dev (build 12177, commit 6c01da627)\nbuilt with Clang 20.1.8 for Windows x86_64",
+  "models": {
+    "q4_k_m": {
+      "file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db"
+    }
+  },
+  "settings": {
+    "threads": 4,
+    "ctx": 2048,
+    "seed": 42,
+    "max_tokens": 64,
+    "temperature": 0,
+    "ignore_eos": true,
+    "cache_prompt": false,
+    "prompt": "Explain in simple terms why predictable response time matters for real-time systems.",
+    "n_warmup": 5,
+    "n_measured": 50,
+    "cooldown_s": 60,
+    "order_seed": 1234,
+    "repeats": 1,
+    "load_procs": {
+      "idle": 0,
+      "medium": 8,
+      "heavy": 16
+    }
+  },
+  "freq_sampling": {
+    "has_freq": true,
+    "has_temp": true
+  },
+  "config_order": [
+    {
+      "repeat": 0,
+      "pos": 0,
+      "quant": "q4_k_m",
+      "load": "idle"
+    }
+  ],
+  "finished": "2026-11-08T22:50:22"
+}

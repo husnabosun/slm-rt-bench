@@ -1,0 +1,132 @@
+{
+  "run_id": "contention_v2",
+  "started": "2026-11-09T11:15:54",
+  "cpu": "AMD Ryzen 7 7730U with Radeon Graphics",
+  "cores_physical": 8,
+  "cores_logical": 16,
+  "ram_gb": 15.3,
+  "os": "Windows-10-10.0.26200-SP0",
+  "power_plan": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Dengeli)",
+  "power_mode_overlay": {
+    "guid": "ded574b5-45a0-4f42-8737-46345c09c238",
+    "name": "Best performance"
+  },
+  "on_ac_power": true,
+  "python": "3.11.5",
+  "llama_server_version_output": "version: 0.9.0-dev (build 12177, commit 6c01da627)\nbuilt with Clang 20.1.8 for Windows x86_64",
+  "models": {
+    "q4_k_m": {
+      "file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+      "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db"
+    },
+    "q8_0": {
+      "file": "qwen2.5-0.5b-instruct-q8_0.gguf",
+      "sha256": "ca59ca7f13d0e15a8cfa77bd17e65d24f6844b554a7b6c12e07a5f89ff76844e"
+    }
+  },
+  "settings": {
+    "llama_cpp_build": "b12177",
+    "server_host": "127.0.0.1",
+    "server_port": 8089,
+    "server_threads": 4,
+    "context_size": 2048,
+    "server_parallel_slots": 1,
+    "server_startup_timeout_s": 120,
+    "server_stop_timeout_s": 10,
+    "health_poll_interval_s": 0.5,
+    "health_request_timeout_s": 2,
+    "prompt": "Explain in simple terms why predictable response time matters for real-time systems.",
+    "max_new_tokens": 64,
+    "temperature": 0,
+    "seed": 42,
+    "ignore_eos": true,
+    "cache_prompt": false,
+    "request_timeout_s": 300,
+    "load_process_counts": {
+      "idle": 0,
+      "medium": 8,
+      "heavy": 16
+    },
+    "warmup_requests": 5,
+    "measured_requests": 50,
+    "cooldown_min_s": 60,
+    "cooldown_max_s": 300,
+    "cooldown_target_temp_c": 60,
+    "cooldown_check_interval_s": 5,
+    "config_order_seed": 1234,
+    "cpu_reading_interval_s": 1.0,
+    "progress_report_every": 10,
+    "low_frequency_threshold_mhz": 1500
+  },
+  "arguments": {
+    "quants": [
+      "q8_0",
+      "q4_k_m"
+    ],
+    "loads": [
+      "idle",
+      "medium"
+    ],
+    "warmup": 5,
+    "n": 50,
+    "cooldown_min": 60,
+    "cooldown_max": 300,
+    "repeats": 2,
+    "seed": 1234
+  },
+  "freq_sampling": {
+    "has_freq": true,
+    "has_temp": true
+  },
+  "config_order": [
+    {
+      "repeat": 0,
+      "pos": 0,
+      "quant": "q8_0",
+      "load": "medium"
+    },
+    {
+      "repeat": 0,
+      "pos": 1,
+      "quant": "q4_k_m",
+      "load": "idle"
+    },
+    {
+      "repeat": 0,
+      "pos": 2,
+      "quant": "q8_0",
+      "load": "idle"
+    },
+    {
+      "repeat": 0,
+      "pos": 3,
+      "quant": "q4_k_m",
+      "load": "medium"
+    },
+    {
+      "repeat": 1,
+      "pos": 4,
+      "quant": "q8_0",
+      "load": "idle"
+    },
+    {
+      "repeat": 1,
+      "pos": 5,
+      "quant": "q8_0",
+      "load": "medium"
+    },
+    {
+      "repeat": 1,
+      "pos": 6,
+      "quant": "q4_k_m",
+      "load": "idle"
+    },
+    {
+      "repeat": 1,
+      "pos": 7,
+      "quant": "q4_k_m",
+      "load": "medium"
+    }
+  ],
+  "finished": "2026-11-09T11:30:32"
+}
